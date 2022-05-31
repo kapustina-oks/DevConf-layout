@@ -12,15 +12,13 @@ const Speakers = () => {
             <Title title='Speakers' marginBottom='4'/>
             <Paragraph text='List your featured speakers here. You can provide more info about each speaker in the relevant modal windows. Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
                        margin='mx-80 mb-16' textAlign='center'/>
-
-            <div className='flex justify-between'>
+            <div className='grid grid-cols-4 gap-4 mb-4'>
                 {
                     users.map(user => <Card name={user.name} job={user.job} photo={user.photo} id={user.id} key={user.id}/>)
                 }
             </div>
 
-            <Button title='Get tickets' bgColor='[#00BA40]' textColor='white' marginRight='4' shadowColor='[#00bc3c]' shadow='lg'/>
-
+            <Button title='Get tickets' bgColor='[#00BA40]' textColor='white' shadowColor='[#00bc3c]' shadow='lg'/>
         </div>
     )
 }

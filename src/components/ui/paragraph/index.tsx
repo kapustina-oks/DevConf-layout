@@ -1,20 +1,19 @@
 
 interface IParagraphProps {
    text: string
-
     margin?:string
-   //marginBottom?: string
    fontWeight?: string
-   //marginX?: string
    textAlign?: string
+    textSize?: string
 }
 
-const Paragraph = ({text, margin, fontWeight, textAlign}: IParagraphProps) => {
+const Paragraph = ({text, margin, fontWeight, textAlign, textSize}: IParagraphProps) => {
     return (
         <p className={` ${margin ? margin : null}
         font-${fontWeight ? fontWeight : ''} 
         text-${textAlign ? textAlign : ''}
-        text-base text-[#343D48]`}>{text}</p>
+        text-${textSize ? textSize : 'base'} 
+        text-[#343D48]`}>{text}</p>
     )
 }
 
