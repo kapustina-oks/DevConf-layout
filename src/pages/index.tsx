@@ -6,6 +6,7 @@ import AboutUs from "./about-us";
 import Previously from "../components/previously";
 import Speakers from "./speakers";
 import Schedule from "./schedule";
+import Tickets from "./tickets";
 
 
 const Home: NextPage = () => {
@@ -30,6 +31,7 @@ const Home: NextPage = () => {
         <Previously />
         <Speakers />
         <Schedule />
+        <Tickets />
     </div>
   )
 }

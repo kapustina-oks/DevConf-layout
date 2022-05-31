@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import styles from './prew.module.css'
 import Button from "../ui/button";
+import IconBox from "../ui/icon-box";
+import data from "../preview/data";
 
 const Preview = () => {
     return (
@@ -23,51 +25,10 @@ const Preview = () => {
                 <h2 className='mb-8 text-lg font-medium'>We are in numbers</h2>
 
                 <div className='flex justify-between'>
-
-                    <div className='flex justify-between mr-12'>
-                        <div className='bg-[#00BA40] py-2 px-2 mr-3 rounded-xl relative flex justify-center content-center'>
-                            <Image src="/user.svg" width={32} height={32}/>
-                        </div>
-
-                        <div className='flex flex-col justify-between'>
-                            <p>2000+</p>
-                            <p>Attendees</p>
-                        </div>
-                    </div>
-
-                    <div className='flex justify-between mr-12'>
-                        <div className='bg-[#00BA40] py-2 px-2 mr-3 rounded-xl relative flex justify-center content-center'>
-                            <Image src="/sound.svg" width={32} height={32}/>
-                        </div>
-
-                        <div className='flex flex-col justify-between'>
-                            <p>60+</p>
-                            <p>Talks</p>
-                        </div>
-                    </div>
-
-                    <div className='flex justify-between mr-12'>
-                        <div className='bg-[#00BA40] py-2 px-2 mr-3 rounded-xl relative flex justify-center content-center'>
-                            <Image src="/document.svg" width={32} height={32}/>
-                        </div>
-
-                        <div className='flex flex-col justify-between'>
-                            <p>10</p>
-                            <p>Workshops</p>
-                        </div>
-                    </div>
-
-                    <div className='flex justify-between mr-12'>
-                        <div className='bg-[#00BA40] py-2 px-2 mr-3 rounded-xl relative flex justify-center content-center'>
-                            <Image src="/flash.svg" width={32} height={32}/>
-                        </div>
-
-                        <div className='flex flex-col justify-between'>
-                            <p>3</p>
-                            <p>Days</p>
-                        </div>
-                    </div>
-
+                    {
+                        data.map((item, i) => <IconBox key={i} img={item.img} width={item.width}
+                        height={item.height} title={item.title} subtitle={item.subtitle}/>)
+                    }
                 </div>
 
             </div>

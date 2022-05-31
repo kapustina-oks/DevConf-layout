@@ -12,7 +12,6 @@ interface IButtonProps {
 }
 
 const Button = ({title, marginRight, textColor, shadow, shadowColor, bgColor, fontWeight, selfContent, paddingX, paddingY }: IButtonProps): JSX.Element => {
-    console.log(bgColor)
     return (
         <button
             className={`text-sm rounded-3xl 
