@@ -7,6 +7,8 @@ import Previously from "../components/previously";
 import Speakers from "./speakers";
 import Schedule from "./schedule";
 import Tickets from "./tickets";
+import Buns from "./buns";
+import Venue from "./venue";
 
 
 const Home: NextPage = () => {
@@ -32,6 +34,9 @@ const Home: NextPage = () => {
         <Speakers />
         <Schedule />
         <Tickets />
+        <Buns />
+        <Venue />
+        {/*<Sponsors />*/}
     </div>
   )
 }
