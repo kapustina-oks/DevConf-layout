@@ -9,6 +9,7 @@ import Schedule from "./schedule";
 import Tickets from "./tickets";
 import Buns from "./buns";
 import Venue from "./venue";
+import Sponsors from "./sponsors";
 
 
 const Home: NextPage = () => {

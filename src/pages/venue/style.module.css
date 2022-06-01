@@ -1,0 +1,18 @@
+.img1 {
+    position: absolute;
+    top: 25%;
+    left: 65%;
+    z-index: 2;
+}
+
+.img2 {
+    position: absolute;
+    left: 80%;
+    top: 43%;
+}
+
+.img3 {
+    position: absolute;
+    left: 52%;
+    top: 50%;
+}
