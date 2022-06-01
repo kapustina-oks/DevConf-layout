@@ -10,6 +10,7 @@ import Tickets from "./tickets";
 import Buns from "./buns";
 import Venue from "./venue";
 import Sponsors from "./sponsors";
+import Footer from "../components/footer";
 
 
 const Home: NextPage = () => {
@@ -37,7 +38,8 @@ const Home: NextPage = () => {
         <Tickets />
         <Buns />
         <Venue />
-        {/*<Sponsors />*/}
+        <Sponsors />
+        <Footer />
     </div>
   )
 }
