@@ -1,4 +1,5 @@
-import Image from "next/image";
+import React from 'react';
+import Image from 'next/image';
 
 interface IImageProps {
     src: string
@@ -6,10 +7,8 @@ interface IImageProps {
     height?: number
 }
 
-const Img = ({src, width, height }: IImageProps) => {
-    return (
-        <Image src={src} width={width} height={height}/>
-    )
-}
+const Img = ({ src, width, height }: IImageProps) => (
+	<Image src={src} width={width} height={height}/>
+);
 
 export default Img;

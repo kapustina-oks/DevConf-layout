@@ -1,3 +1,4 @@
+import React from 'react';
 
 interface IParagraphProps {
    text: string
@@ -7,14 +8,14 @@ interface IParagraphProps {
     textSize?: string
 }
 
-const Paragraph = ({text, margin, fontWeight, textAlign, textSize}: IParagraphProps) => {
-    return (
-        <p className={` ${margin ? margin : null}
+const Paragraph = ({
+	text, margin, fontWeight, textAlign, textSize,
+}: IParagraphProps) => (
+	<p className={` ${margin ? margin : null}
         font-${fontWeight ? fontWeight : ''} 
         text-${textAlign ? textAlign : ''}
         text-${textSize ? textSize : 'base'} 
         text-[#343D48]`}>{text}</p>
-    )
-}
+);
 
 export default Paragraph;

@@ -1,6 +1,7 @@
-import IconBox from "../icon-box";
-import Paragraph from "../paragraph";
-import Button from "../button";
+import React from 'react';
+import IconBox from '../icon-box';
+import Paragraph from '../paragraph';
+import Button from '../button';
 
 interface ICardPriceProps {
     title: string,
@@ -12,23 +13,24 @@ interface ICardPriceProps {
     icon: string,
 }
 
-const CardPrice = ({title, subTitle, price, line_1, line_3, line_2, icon}: ICardPriceProps) => {
-    return (
-        <div className='flex flex-col justify-between items-center p-8 border border-[#EDEDED] rounded-xl'>
-            <div className='self-baseline'>
-                <IconBox height={32} width={32} img={icon} subtitle={subTitle} title={title}
-                         subTitleStyles='text-sm text-[#B8B8B8]' titleStyles='text-base font-medium text-[#0F2137]'
-                />
-            </div>
-            <div>
-                <Paragraph text={line_1} margin='mb-5 mt-5'/>
-                <Paragraph text={line_2} margin='mb-5'/>
-                <Paragraph text={line_3} margin='mb-5'/>
-            </div>
-            <p className='text-3xl text-[#00BA40] font-medium mb-4'>{price}</p>
-            <Button title='Buy now' shadow='lg' shadowColor='[#00BA40]' />
-        </div>
-    )
-}
+const CardPrice = ({
+	title, subTitle, price, line_1, line_3, line_2, icon,
+}: ICardPriceProps) => (
+	<div className="flex flex-col justify-between items-center p-8 border border-[#EDEDED] rounded-xl">
+		<div className="self-baseline">
+			<IconBox height={32} width={32} img={icon} subtitle={subTitle} title={title}
+				subTitleStyles="text-sm text-[#B8B8B8]" titleStyles="text-base font-medium text-[#0F2137]"
+			/>
+		</div>
+		<div>
+			<Paragraph text={line_1} margin="mb-5 mt-5"/>
+			<Paragraph text={line_2} margin="mb-5"/>
+			<Paragraph text={line_3} margin="mb-5"/>
+		</div>
+		<p className="text-3xl text-[#00BA40] font-medium mb-4">{price}</p>
+		<Button title="Buy now"
+			styles="bg-[#00BA40] px-16 shadow-md shadow-[#00BA40]"/>
+	</div>
+);
 
 export default CardPrice;
