@@ -4,7 +4,7 @@ import IconBox from '../ui/icon-box';
 import data from '../preview/data';
 
 const Preview = () => (
-	<div className="mt-40 ml-28  flex justify-between">
+	<div className="mt-40 ml-28 flex justify-between">
 		<div>
 			<div className="flex flex-row items-center">
 				<div className="text-6xl text-[#00BA40] font-bold">{'{'}</div>

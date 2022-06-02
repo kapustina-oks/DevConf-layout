@@ -19,7 +19,7 @@ const Speakers = () => (
 			}
 		</div>
 
-		<Button title="Get tickets" styles="bg-[#00BA40] text-white shadow-[#00bc3c] shadow-lg" />
+		<Button title="Get tickets" styles="bg-[#00BA40] text-white shadow-[#00bc3c] shadow-lg px-4" />
 	</div>
 );
 

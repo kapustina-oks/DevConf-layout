@@ -13,7 +13,7 @@ const Schedule = () => (
 		<div className="bg-[#F5F5F5] rounded-xl mb-10 p-4 self-start ml-11">
 			{
 				['Day 1', 'Day 2', 'Day 3'].map((day, i) => <Button title={day} key={i}
-					styles="mr-4 px-14 bg-[#F5F5F5] text-black hover:bg-[#00BA40]
+					styles="mr-4 px-14 bg-[#F5F5F5] text-[#000] hover:bg-[#00BA40]
                                                                        hover:text-white
                                                                        focus:text-white focus:bg-[#00BA40]"
 				/>)
@@ -22,7 +22,7 @@ const Schedule = () => (
 
 		<h6 className="self-start text-[#0F2137] text-2xl font-medium mb-10 ml-11">Wednesday - 24 oct</h6>
 
-		<div className="ml-11 min-w-full">
+		<div className="mx-11 min-w-full">
 			{
 				speakers.map((speaker) => <Speaker key={speaker.id}
 					speaker={speaker.speaker}
