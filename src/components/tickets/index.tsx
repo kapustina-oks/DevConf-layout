@@ -1,12 +1,12 @@
 import React from 'react';
-import ButtonTitle from '../../components/ui/button-title';
-import Title from '../../components/ui/title';
-import Paragraph from '../../components/ui/paragraph';
-import CardPrice from '../../components/ui/card-price';
+import ButtonTitle from '../ui/button-title';
+import Title from '../ui/title';
+import Paragraph from '../ui/paragraph';
+import CardPrice from '../ui/card-price';
 import data from './data';
 
 const Tickets = () => (
-	<div className="mt-28 flex flex-col items-center">
+	<div className="mt-28 flex flex-col items-center" id="tickets">
 		<ButtonTitle title="Buy tickets"/>
 		<Title title="Tickets and more"/>
 		<Paragraph

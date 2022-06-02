@@ -1,13 +1,13 @@
 import React from 'react';
-import ButtonTitle from '../../components/ui/button-title';
-import Title from '../../components/ui/title';
-import Paragraph from '../../components/ui/paragraph';
-import Card from '../../components/ui/card';
+import ButtonTitle from '../ui/button-title';
+import Title from '../ui/title';
+import Paragraph from '../ui/paragraph';
+import Card from '../ui/card';
 import users from './data';
-import Button from '../../components/ui/button';
+import Button from '../ui/button';
 
 const Speakers = () => (
-	<div className="mt-28 flex flex-col items-center">
+	<div className="mt-28 flex flex-col items-center" id="speakers">
 		<ButtonTitle title="About speakers" />
 		<Title title="Speakers" marginBottom="4"/>
 		<Paragraph text="List your featured speakers here. You can provide more info about each speaker in the relevant modal windows. Lorem ipsum dolor sit amet, consectetur adipiscing elit."

@@ -1,9 +1,9 @@
 import React from 'react';
-import ButtonTitle from '../../components/ui/button-title';
-import Title from '../../components/ui/title';
+import ButtonTitle from '../ui/button-title';
+import Title from '../ui/title';
 import styles from './style.module.css';
 import data from './data';
-import IconBox from '../../components/ui/icon-box';
+import IconBox from '../ui/icon-box';
 import Image from 'next/image';
 
 const Buns = () => (

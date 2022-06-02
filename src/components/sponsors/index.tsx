@@ -1,13 +1,13 @@
 import React from 'react';
-import ButtonTitle from '../../components/ui/button-title';
-import Title from '../../components/ui/title';
-import Paragraph from '../../components/ui/paragraph';
-import Button from '../../components/ui/button';
+import ButtonTitle from '../ui/button-title';
+import Title from '../ui/title';
+import Paragraph from '../ui/paragraph';
+import Button from '../ui/button';
 import data from './data';
-import Img from '../../components/ui/image';
+import Img from '../ui/image';
 
 const Sponsors = () => (
-	<div className="flex flex-col items-center mt-28 relative">
+	<div className="flex flex-col items-center mt-28 relative" id="sponsors">
 		<ButtonTitle title="Support meet"/>
 		<Title title="Sponsors & Partners"/>
 		<Paragraph text="Want to become a sponsor? Get in touch lorem ipsum dolor sit amet, consectetur adipiscing

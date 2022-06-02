@@ -1,14 +1,14 @@
 import React from 'react';
-import Title from '../../components/ui/title';
-import ButtonTitle from '../../components/ui/button-title';
-import Button from '../../components/ui/button';
-import Paragraph from '../../components/ui/paragraph';
-import Tag from '../../components/ui/tag';
+import Title from '../ui/title';
+import ButtonTitle from '../ui/button-title';
+import Button from '../ui/button';
+import Paragraph from '../ui/paragraph';
+import Tag from '../ui/tag';
 import { dataTag, dataTime } from './data';
-import TimeBox from '../../components/ui/time-box';
+import TimeBox from '../ui/time-box';
 
 const AboutUs = () => (
-	<div className="mt-28 flex items-center flex-col">
+	<div className="mt-28 flex items-center flex-col" id="about-us">
 		<ButtonTitle title="Why join us" />
 		<Title title="About DevConf" marginBottom="16"/>
 		<div className="flex justify-between">

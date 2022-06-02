@@ -1,15 +1,15 @@
 import React from 'react';
-import ButtonTitle from '../../components/ui/button-title';
-import Title from '../../components/ui/title';
-import Paragraph from '../../components/ui/paragraph';
+import ButtonTitle from '../ui/button-title';
+import Title from '../ui/title';
+import Paragraph from '../ui/paragraph';
 import Image from 'next/image';
-import Button from '../../components/ui/button';
+import Button from '../ui/button';
 import data from './data';
-import IconBox from '../../components/ui/icon-box';
+import IconBox from '../ui/icon-box';
 import styles from './style.module.css';
 
 const Venue = () => (
-	<div className="flex flex-col items-center mt-28 relative">
+	<div className="flex flex-col items-center mt-28 relative" id="venue">
 		<ButtonTitle title="How to get"/>
 		<Title title="Venue"/>
 

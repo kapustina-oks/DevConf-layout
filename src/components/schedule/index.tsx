@@ -1,12 +1,12 @@
 import React from 'react';
-import ButtonTitle from '../../components/ui/button-title';
-import Title from '../../components/ui/title';
-import Button from '../../components/ui/button';
-import Speaker from '../../components/ui/speaker';
+import ButtonTitle from '../ui/button-title';
+import Title from '../ui/title';
+import Button from '../ui/button';
+import Speaker from '../ui/speaker';
 import speakers from './data';
 
 const Schedule = () => (
-	<div className="mt-28 flex flex-col items-center">
+	<div className="mt-28 flex flex-col items-center" id="schedule">
 		<ButtonTitle title="Meet-up" />
 		<Title title="Schedule" />
 
